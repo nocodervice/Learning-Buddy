@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "chromadb": "^3.0.10",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mammoth": "^1.9.1",
+    "multer": "^2.0.2",
+    "openai": "^5.10.2",
+    "pdf-parse": "^1.1.1",
+    "pptx-parser": "^1.1.7-beta.9"
+  }
+}
