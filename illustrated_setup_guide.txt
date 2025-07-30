@@ -1,0 +1,30 @@
+# Learning Buddy v5 Illustrated Setup Guide
+
+## New Feature: PowerPoint (.PPT, .PPTX) Support
+- You can now upload PDFs, Word documents, PowerPoints, and text files.
+- AI uses indexed class materials for answering questions.
+
+## Adjustable AI Settings
+- `temperature` (0–1): controls creativity. Lower = more focused answers.
+- `top_p` (0–1): controls randomness. Lower = more deterministic.
+
+## Installation Steps
+1. Install Node.js from https://nodejs.org/ (LTS version).
+2. Unzip `learning_buddy_v5.zip`.
+3. Open terminal and navigate to backend:
+   ```
+   cd Desktop/learning_buddy_v5/backend
+   ```
+4. Create `.env` file with:
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
+5. Install dependencies:
+   ```
+   npm install express body-parser openai dotenv multer chromadb pdf-parse mammoth pptx-parser
+   ```
+6. Run backend:
+   ```
+   node server.js
+   ```
+7. Open `frontend/index.html` in your browser.
