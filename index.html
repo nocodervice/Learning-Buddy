@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Buddy v5</title>
+    <style>
+        body { font-family: 'Comic Sans MS', cursive, sans-serif; background: #fffbe6; margin: 0; padding: 0; }
+        header { padding: 1rem; background-color: #ffcc66; text-align: center; font-size: 1.5rem; }
+        #controls { padding: 1rem; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; justify-content: center; }
+        #chatContainer { padding: 1rem; max-height: 60vh; overflow-y: auto; background: #fffaf2; border-top: 1px solid #ccc; }
+        .chat-entry { padding: 1rem; border-bottom: 1px dashed #aaa; white-space: pre-wrap; }
+        #inputContainer { display: flex; padding: 1rem; gap: 10px; }
+        #inputField { flex: 1; padding: 0.5rem; font-size: 1rem; }
+        button, select { padding: 0.5rem; font-size: 1rem; }
+    </style>
+</head>
+<body>
+
+<header>Learning Buddy v5</header>
+
+<div id="controls">
+    <select id="subjectSelect">
+        <option value="">-- Select Subject --</option>
+        <option value="new">+ New subject</option>
+    </select>
+    <input type="file" id="fileInput" style="display:none;" multiple />
+    <button onclick="document.getElementById('fileInput').click();">Upload Material</button>
+</div>
+
+<div id="chatContainer"></div>
+
+<div id="inputContainer">
+    <input type="text" id="inputField" placeholder="Ask your question here..." />
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
